@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Saira", sans-serif;
+  background-color: #131313;
+  color: #f5f5f5;
+}
+
+header h1 {
+  padding: 10px;
+  color: #5CB7EA;
+  font-size: 96px;
+  font-style: italic;
+  font-weight: 500;
+  margin-left: 20px;
+}
+@media screen and (max-width: 945px) {
+  header h1 {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 576px) {
+  header h1 {
+    padding: 2px;
+    font-size: xx-large;
+    margin-left: 0px;
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 1366px) {
+  main {
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+@media screen and (max-width: 945px) {
+  main {
+    align-items: center;
+    justify-content: center;
+  }
+}
+main .img-principal {
+  width: 900px;
+  height: 500px;
+  background-size: cover;
+  margin: 0 0px 20px 30px;
+  border-radius: 10px;
+  border: 5px solid transparent;
+  transition: 350ms ease;
+}
+@media screen and (max-width: 945px) {
+  main .img-principal {
+    width: 735px;
+    height: 410px;
+  }
+}
+@media screen and (max-width: 850px) {
+  main .img-principal {
+    margin: 0 0 20px 0;
+  }
+}
+@media screen and (max-width: 576px) {
+  main .img-principal {
+    width: 250px;
+    height: 140px;
+  }
+}
+main .img-principal:hover {
+  border: 5px solid #5CB7EA;
+}
+main .about-me {
+  margin: 0px 0px 0px 30px;
+}
+@media screen and (max-width: 576px) {
+  main .about-me {
+    margin-left: 5px;
+  }
+}
+main .about-me h2 {
+  font-size: 36px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 576px) {
+  main .about-me h2 {
+    font-size: x-large;
+    margin-left: 0px;
+    margin-bottom: 10px;
+  }
+}
+main .about-me p {
+  font-family: Saira;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+@media screen and (max-width: 576px) {
+  main .about-me p {
+    font-size: medium;
+    margin-left: 0px;
+    margin-bottom: 10px;
+  }
+}
+main .about-me .botoes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 40px;
+}
+@media screen and (max-width: 576px) {
+  main .about-me .botoes {
+    margin-left: 5px;
+  }
+}
+main .about-me .botoes a {
+  text-decoration: none;
+  margin-right: 20px;
+  cursor: pointer;
+  transition: 350ms ease;
+}
+@media screen and (max-width: 576px) {
+  main .about-me .botoes a {
+    margin-right: 10px;
+  }
+}
+main .about-me .botoes a:hover {
+  opacity: 0.6;
+}
+@media screen and (max-width: 576px) {
+  main .about-me .botoes a img {
+    width: 30px;
+  }
+}
+main .about-me .botoes button {
+  width: 120px;
+  height: 40px;
+  background-color: #0A0909;
+  border: 2px solid #353333;
+  border-radius: 5px;
+  transition: 0.6s ease;
+  color: #f1f1ed;
+  font-size: medium;
+  font-family: "Saira", sans-serif;
+  cursor: pointer;
+}
+main .about-me .botoes button:hover {
+  border: 2px solid #f1f1ed;
+}
+@media screen and (max-width: 576px) {
+  main .about-me .botoes button {
+    width: 100px;
+    height: 40px;
+    font-size: 16px;
+  }
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+}
+section h2 {
+  margin-top: 15px;
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 850px) {
+  section h2 {
+    margin-top: 30px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 576px) {
+  section h2 {
+    margin-left: 0px;
+  }
+}
+section .projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+@media screen and (max-width: 850px) {
+  section .projects {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+section .projects .project {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: #DBDBDB;
+  margin-left: 30px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  color: #131313;
+  font-family: "Saira", sans-serif;
+  font-weight: 900;
+  font-size: medium;
+  text-decoration: none;
+  transition: 0.5s ease;
+  opacity: 0.5;
+}
+section .projects .project:hover {
+  background-color: #f5f5f5;
+  opacity: 1;
+}
+@media screen and (max-width: 576px) {
+  section .projects .project {
+    margin-left: 0px;
+  }
+}
+section .projects .project p {
+  margin-top: 10px;
+}/*# sourceMappingURL=style.css.map */
